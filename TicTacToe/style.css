@@ -1,0 +1,91 @@
+*,*::before,*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins','sans-serif';
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("data:image/jpeg;base64,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");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    place-items: center; /*sb kuch ko center me krne k liye grid ka use kiya */
+}
+
+
+
+.game-info {
+    color: white;
+    position: absolute;
+    top: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 0.5rem 3rem;
+    /* text-align: center; */
+}
+
+.tic-tac-toe {
+    width: 90%; /* jaise hi chhoti screen hoti h width90% le lega or badi screen pr 3rem */
+    max-width: 20rem;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    aspect-ratio: 1/1;  /*for square shape*/
+
+}
+
+.box {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+    font-size: 3rem;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.box1, .box2, .box4, .box5 {
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+.box3, .box6 {
+    border-bottom: 2px solid white;
+}
+
+.box7, .box8 {
+    border-right: 2px solid white;
+}
+
+.btn {
+    color: white;
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+    display: none; /* opacity 1 se bhi disapper ho jata*/
+
+}
+.btn.active {
+    display: flex;
+}
+
+.win {
+    background-color: rgba(0, 255, 0, 0.3);
+}
